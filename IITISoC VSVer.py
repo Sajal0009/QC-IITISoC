@@ -15,9 +15,9 @@ print(H)
 dev = qml.device("lightning.qubit", wires = NoOfQ)
 
 hf = qml.qchem.hf_state(8, NoOfQ)
-print(hf)                                                                                                      #Printing the Hartree-Fock State
+print(hf)                                                                                                  #Printing the Hartree-Fock State
 
-SingleE, DoubleE = qml.qchem.excitations(8, 12)
+SingleE, DoubleE = qml.qchem.excitations(8, 12)                                                            #Checking all excitations
 
 for excitation in SingleE:
     print(excitation)
