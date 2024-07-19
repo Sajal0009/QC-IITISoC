@@ -1,3 +1,4 @@
+import jax
 import pennylane as qml
 from jax import numpy as np
 
